@@ -11,6 +11,7 @@ const BlogController = require('./controllers/BlogController');
 const blog = new BlogController();
 
 // App routes
+app.get('/', jsonParser, (req, res) => res.send("loaded successfully..."));
 app.post('/register', jsonParser, (req, res) => auth.register(req, res));
 app.post('/login', jsonParser, (req, res) => auth.login(req, res));
 
