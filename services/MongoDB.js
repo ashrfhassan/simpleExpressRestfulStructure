@@ -3,7 +3,7 @@ const MongoClient = MongoDBInstance.MongoClient;
 const assert = require('assert');
 
 // Connection URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://root:root@mongodb:27017';
 
 // Database Name
 const dbName = 'blogger';
